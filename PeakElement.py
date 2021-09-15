@@ -1,4 +1,7 @@
 def isPeak(arr,i):
+    # if i == 0 and arr[i] > arr[i+1]
+    # if i== n-1 and arr[i]>arr[i-1]
+    # if arr[i]>= arr[i+1] and arr[i-1]
     if(i==0 or arr[i-1]<= arr[i]) and (i== len(arr)-1 or arr[i+1] <= arr[i]):
         return 1
     else:
